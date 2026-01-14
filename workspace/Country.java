@@ -15,16 +15,21 @@ public class Country
   // Write accessor/get methods for each instance variable that returns it.
   public String getName(){
     return countryName;
-    return capital;
-    return language;
-    return imageFile;
   }
   public void setName(String name){
     countryName = name;
   }
+  public String getCapital(){
+    return capital;
   }
+  public void setCapital(String name){
+    
+  }
+
   // Write a toString() method that returns a concatenated String of 3 of the instance variables in a sentence like "..'s capital is .. and its primary language is ..."
- 
+  public String toString(){
+    
+  }
 
 
   
