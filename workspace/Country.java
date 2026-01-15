@@ -23,13 +23,25 @@ public class Country
     return capital;
   }
   public void setCapital(String name){
-    
+    capital = name;
+  }
+  public String getSpeech(){
+    return language;
+  }
+  public void setSpeech(String name){
+    language = name;
+  }
+  public String getPic(){
+    return imageFile;
+  }
+  public void setPic(String name){
+    imageFile = name;
   }
 
   // Write a toString() method that returns a concatenated String of 3 of the instance variables in a sentence like "..'s capital is .. and its primary language is ..."
-  public String toString(){
+  // public String toString(){
     
-  }
+  // }
 
 
   
