@@ -37,12 +37,8 @@ public class Country
   public void setPic(String name){
     imageFile = name;
   }
-
   // Write a toString() method that returns a concatenated String of 3 of the instance variables in a sentence like "..'s capital is .. and its primary language is ..."
-  // public String toString(){
-    
-  // }
-
-
-  
+  public String toString(){
+    return countryName + "'s capital is " + capital + "," + " and its primary language is " + language + ".";
+  }
 }
