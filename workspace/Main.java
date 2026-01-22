@@ -44,6 +44,9 @@ public class Main
     // inside the loop, set countryArray[i] to the created Country object
     //after running this method your array should contain all 10 countries from inside the countries-data file.
     Scanner scan = new Scanner(System.in);
+    for (int i = 0; i < countryArray.length; i++);{
+      String lines = scan.nextLine();
+    }
     
   }
 
@@ -51,7 +54,9 @@ public class Main
   */
   public void showCountry() {
     // Get the country at index from countryArray
-    
+    for (int i = 0; i < countryArray.length; i++){
+      countryArray[i] = countryArray[index];
+    }
     // Use its get method to get the its image file name and save it into imagefile variable below instead of worldmap.jpg.
     String imagefile = "worldmap.jpg";
     // Use the following code to create an new Image Icon and put it into the GUI
@@ -64,7 +69,7 @@ public class Main
   {
     if (index > 9){
       index = 0;
-      outputLabel.setTex("");
+      outputLabel.setText("");
       showCountry();
     }   
   }
@@ -72,8 +77,10 @@ public class Main
   /* reviewButton should get the country at index from the countryArray, call its toString() method and save the result, print it out with System.out.println and as an argument to outputLabel.setText( text to print out ); */
   public void reviewButtonClick()
   {
-
-
+   for (int i = 0; i < countryArray.length; i++){
+      countryArray[i] = countryArray[index];
+    }
+    String countryInfo = countryArray[index].toString();
   }
 
   /* quizButton should clear the outputLabel (outputLabel.setText to empty string), get the country at index from countryArray, print out a question about it like What country is this? and/or What's this country's capital?. Get the user's answer using scan.nextLine() and check if it is equal to the country's data using its get methods and print out correct or incorrect.
